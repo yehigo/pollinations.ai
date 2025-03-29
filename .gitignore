@@ -32,7 +32,7 @@ analysis_benchmark.json
 .packages.generated
 
 # Flutter/Dart/Pub related
-**/doc/api/
+#**/doc/api/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
