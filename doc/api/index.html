@@ -46,49 +46,69 @@
   <div id="dartdoc-main-content" class="main-content">
       
 <section class="desc markdown">
-  <h1 id="pollinations_ai">pollinations_ai</h1>
-<pre class="language-dart"><code>Pollinations.ai: (https://pollinations.ai/)
+  <h1 id="pollinationsai-flutterdart-sdk">Pollinations.ai Flutter/Dart SDK</h1>
+<pre class="language-dart"><code>Pollinations.ai
 
-Work with the best generative models from Pollinations using this SDK for flutter/dart.
+Effortlessly integrate the best generative AI models from Pollinations into your Flutter/Dart applications with this powerful SDK.
 </code></pre>
+<h2 id="features">Features</h2>
+<ul>
+<li>Image Generation: Create stunning visuals using state-of-the-art AI models.</li>
+<li>Text Generation: Generate coherent and creative text with advanced language models.</li>
+<li>Model Exploration: Easily explore and list available AI models for both image and text generation</li>
+</ul>
 <h2 id="installing">Installing</h2>
-<pre class="language-dart"><code>flutter pub add pollinations_ai
+<p>Install the package by running the following command:</p>
+<pre class="language-bash"><code class="language-bash">flutter pub add pollinations_ai
 </code></pre>
-<h2 id="image-generation">Image Generation</h2>
-<pre class="language-dart"><code class="language-dart">    import 'package:pollinations_ai/pollinations_ai.dart';
+<h2 id="usage-examples">Usage Examples</h2>
+<h3 id="image-generation">Image Generation</h3>
+<pre class="language-dart"><code class="language-dart">import 'package:pollinations_ai/pollinations_ai.dart';
 
-    final ai = ImageAi(model: "flux");
-    ImageAi image= await ai.call("A beautiful sunset");
-    print(image.prompt, image.response)
-    image.save("pollinations-image.png");
+final ai = ImageAi(model: "flux");
+ImageAi image= await ai.call("A beautiful sunset");
+print(image.prompt, image.response)
+image.save("pollinations-image.png");
 </code></pre>
 <h2 id="text-generation">Text Generation</h2>
-<pre class="language-dart"><code class="language-dart">    import 'package:pollinations_ai/pollinations_ai.dart';
+<pre class="language-dart"><code class="language-dart">import 'package:pollinations_ai/pollinations_ai.dart';
 
-    final ai = TextAi(model: "gpt-3.5-turbo");
-    final text= await ai.call(display:false, // Simulate typing,
+final ai = TextAi(model: "gpt-3.5-turbo");
+final TextAi text= await ai.call(display:false, // Simulate typing,
         encode=True  // Use proper encoding
         prompt: "A beautiful sunset");
-    print(text.response);
+print(text.response);
 
 </code></pre>
 <h2 id="list-all-models">List all models</h2>
-<pre class="language-dart"><code class="language-dart">    import 'package:pollinations_ai/pollinations_ai.dart';
+<pre class="language-dart"><code class="language-dart">import 'package:pollinations_ai/pollinations_ai.dart';
 
-    Future&lt;List&lt;String&gt;&gt; image_generation_ai_models = ImageAi.models();
-    Future&lt;List&lt;String&gt;&gt; futurelist text_ai_models = TextAi.models();
+Future&lt;List&lt;String&gt;&gt; image_generation_ai_models = ImageAi.models();
+Future&lt;List&lt;String&gt;&gt; futurelist text_ai_models = TextAi.models();
 </code></pre>
 <h3 id="contributing">Contributing</h3>
 <p>🤝 We welcome contributions! Please follow these steps:</p>
-<ul>
+<ol>
 <li>Fork the repository</li>
-<li>Create a feature branch (git checkout -b feature/amazing-feature)</li>
-<li>Commit your changes (git commit -m 'Add amazing feature')</li>
-<li>Push to the branch (git push origin feature/amazing-feature)</li>
+<li>Create a feature branch</li>
+</ol>
+<pre class="language-bash"><code class="language-bash">git checkout -b feature/amazing-feature
+</code></pre>
+<ol start="3">
+<li>Commit your changes</li>
+</ol>
+<pre class="language-bash"><code class="language-bash">git commit -m 'Add amazing feature' 
+</code></pre>
+<ol start="4">
+<li>Push to the branch</li>
+</ol>
+<pre class="language-bash"><code class="language-bash">git push origin feature/amazing-feature
+</code></pre>
+<ol start="5">
 <li>Open a Pull Request</li>
-</ul>
-<h3 id="thanks-note">Thanks Note</h3>
-<p>All thanks to <a href="https://pollinations.ai/">pollinations</a> and  contributers</p>
+</ol>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>A big thank you to <a href="https://pollinations.ai/">pollinations</a> and all contributors for their efforts in making this possible.</p>
 </section>
 
 
