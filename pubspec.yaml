@@ -1,5 +1,5 @@
 name: pollinations_ai
-description: "A new Flutter package project."
+description: "The pollinations.ai package is a Flutter/Dart SDK designed to integrate with the Pollinations platform. This package empowers developers to seamlessly access Pollinations' advanced AI capabilities for generating customized media, including images, audio, and text. It provides a streamlined interface for creative professionals, developers, and enthusiasts to harness the power of generative AI in their projects."
 version: 0.0.1-dev.1
 homepage: https://pollinations.yehigo.com
 
