@@ -410,7 +410,7 @@ class Message {
   }
 
   /// Converts the message to a format suitable for the API call.
-  /// @return A Map<String, dynamic(text or image base64encoded)> representing the message.
+  /// @return A Map of String, dynamic(text or image base64encoded) representing the message.
   Map<String, dynamic> call() {
     Map<String, dynamic> message = {"role": EnumToString.convertToString(role)};
     message["content"] = [
