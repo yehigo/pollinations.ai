@@ -16,6 +16,11 @@ Effortlessly integrate the best generative AI models from Pollinations into your
 Install the package by running the following command:
 ```bash
 flutter pub add pollinations_ai
+
+#OR
+
+dart pub add pollinations_ai
+
 ```
 ## Usage Examples
 ### Image Generation
@@ -26,6 +31,7 @@ final ai = ImageAi(model: "flux");
 ImageAi image= await ai.call("A beautiful sunset");
 print(image.prompt, image.response)
 image.save("pollinations-image.png");
+image.imageBytes();  ///Get image as a byte array. 
 ```
 
 

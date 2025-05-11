@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:typed_data';
 
 import 'package:http/http.dart' as http;
 import 'package:pollinations_ai/api_config.dart';
@@ -95,6 +96,20 @@ class ImageAi {
     }
 
     return this;
+  }
+
+    /// Get the bytes of generated image.
+  ///
+  /// @return A Future that resolves to the Uint8List object.
+  /// @throws StateError if the response is not an http.Response.
+  Future<Uint8List> imageBytes() async {
+    if (response is! http.Response) {
+      throw StateError('Response is not an http.Response.  Cannot save.');
+    }
+
+    final http.Response res = response; // Use a local variable
+    final bytes = res.bodyBytes; // Get the bytes
+    return bytes;
   }
 
   @override
