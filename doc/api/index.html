@@ -25,7 +25,7 @@
 <header id="title">
   <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
   <ol class="breadcrumbs gt-separated dark hidden-xs">
-    <li><a href="https://pollinations.yehigo.com">pollinations_ai package</a></li>
+    <li><a href="https://github.com/yehigo/pollinations.ai">pollinations_ai package</a></li>
   </ol>
   <div class="self-name">pollinations_ai</div>
   <form class="search navbar-right" role="search">
@@ -61,6 +61,11 @@ Effortlessly integrate the best generative AI models from Pollinations into your
 <h2 id="installing">Installing</h2>
 <p>Install the package by running the following command:</p>
 <pre class="language-bash"><code class="language-bash">flutter pub add pollinations_ai
+
+#OR
+
+dart pub add pollinations_ai
+
 </code></pre>
 <h2 id="usage-examples">Usage Examples</h2>
 <h3 id="image-generation">Image Generation</h3>
@@ -70,6 +75,7 @@ final ai = ImageAi(model: "flux");
 ImageAi image= await ai.call("A beautiful sunset");
 print(image.prompt, image.response)
 image.save("pollinations-image.png");
+image.imageBytes();  ///Get image as a byte array. 
 </code></pre>
 <h2 id="text-generation">Text Generation</h2>
 <pre class="language-dart"><code class="language-dart">import 'package:pollinations_ai/pollinations_ai.dart';
@@ -162,7 +168,7 @@ Future&lt;List&lt;String&gt;&gt; futurelist text_ai_models = TextAi.models();
   </form>
 </header>
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
-    <li><a href="https://pollinations.yehigo.com">pollinations_ai package</a></li>
+    <li><a href="https://github.com/yehigo/pollinations.ai">pollinations_ai package</a></li>
 </ol>
 
     <h5 class="hidden-xs"><span class="package-name">pollinations_ai</span> <span class="package-kind">package</span></h5>
@@ -185,7 +191,7 @@ Future&lt;List&lt;String&gt;&gt; futurelist text_ai_models = TextAi.models();
 <footer>
   <span class="no-break">
     pollinations_ai
-      0.0.1-dev.1
+      0.0.2
   </span>
   
 </footer>

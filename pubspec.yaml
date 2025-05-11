@@ -1,7 +1,7 @@
 name: pollinations_ai
 description: "The pollinations.ai SDK for Flutter/Dart enables seamless access to AI-powered media generation tools, including images, audio, and text, via the Pollinations platform."
-version: 0.0.1
-homepage: https://pollinations.yehigo.com
+version: 0.0.2
+homepage: https://github.com/yehigo/pollinations.ai
 
 environment:
   sdk: ^3.7.2
