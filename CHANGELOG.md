@@ -1,6 +1,6 @@
 ## 0.0.1
 
-* initial release.
+* Initial Release.
 
 
 ## 0.0.2
